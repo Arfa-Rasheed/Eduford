@@ -1,0 +1,19 @@
+@mixin LinkButton($color,$hoverColor){
+    a {
+        background-color: none;
+        color: $color;
+        text-decoration: none;
+        border: 1px solid $color;
+        padding: 12px 34px;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+    a:hover {
+        border: 2px solid $color;
+        background-color: $color;
+        color:$hoverColor;
+        transition: 1s;
+    }
+}

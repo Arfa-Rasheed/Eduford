@@ -1,0 +1,75 @@
+.MapContainer{
+    width:99.7%;
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .Map{
+        width:76%;
+        height:55vh;
+        border:2px solid black;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.ContactMainContainer {
+    width: 99.7%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ContactContainer {
+        width: 76%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       
+        .ContactForm {
+            width: 100%;
+            height: 60vh;
+            color: white;
+            font-family: 'open sans';
+
+            .Address {
+                margin-left: -16px;
+                margin-bottom: 31px;
+            }
+
+            .input {
+                margin-top: 30px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                width: 565px;
+                height: 43px;
+            }
+
+            #Email {
+                margin-top: 24px;
+            }
+
+            #Subject {
+                margin-top: 14px;
+            }
+
+            #Message {
+                margin-top: 16px;
+                margin-bottom: 25px;
+            }
+                @include LinkButton(#f44336,white);
+        }
+    }
+
+
+}

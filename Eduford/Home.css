@@ -1,0 +1,493 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#AboutUs {
+  height: 50vh;
+  background-image: url("eduford_img/background.jpg");
+}
+#AboutUs .BannerText {
+  width: 46%;
+  margin: auto;
+  margin-top: 7rem;
+  text-align: center;
+  color: white;
+}
+
+.LargestUni_Container {
+  width: 100%;
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LargestUni_Container .LargestUni {
+  width: 76%;
+  height: 51vh;
+  display: flex;
+  justify-content: space-between;
+}
+.LargestUni_Container .LargestUni .LargestUniText {
+  width: 49%;
+  height: 46vh;
+}
+.LargestUni_Container .LargestUni .LargestUniText p {
+  color: #777;
+  padding-bottom: 2rem;
+}
+.LargestUni_Container .LargestUni .LargestUniText a {
+  background-color: none;
+  color: #f44336;
+  text-decoration: none;
+  border: 1px solid #f44336;
+  padding: 12px 34px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.LargestUni_Container .LargestUni .LargestUniText a:hover {
+  border: 2px solid #f44336;
+  background-color: #f44336;
+  color: white;
+  transition: 1s;
+}
+.LargestUni_Container .LargestUni .LargestUniImg {
+  width: 50%;
+  height: 50vh;
+}
+.LargestUni_Container .LargestUni .LargestUniImg img {
+  width: 100%;
+}
+
+.MapContainer {
+  width: 99.7%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MapContainer .Map {
+  width: 76%;
+  height: 55vh;
+  border: 2px solid black;
+}
+.MapContainer .Map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.ContactMainContainer {
+  width: 99.7%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContactMainContainer .ContactContainer {
+  width: 76%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContactMainContainer .ContactContainer .ContactForm {
+  width: 100%;
+  height: 60vh;
+  color: white;
+  font-family: "open sans";
+}
+.ContactMainContainer .ContactContainer .ContactForm .Address {
+  margin-left: -16px;
+  margin-bottom: 31px;
+}
+.ContactMainContainer .ContactContainer .ContactForm .input {
+  margin-top: 30px;
+}
+.ContactMainContainer .ContactContainer .ContactForm label {
+  font-size: 14px;
+}
+.ContactMainContainer .ContactContainer .ContactForm input {
+  width: 565px;
+  height: 43px;
+}
+.ContactMainContainer .ContactContainer .ContactForm #Email {
+  margin-top: 24px;
+}
+.ContactMainContainer .ContactContainer .ContactForm #Subject {
+  margin-top: 14px;
+}
+.ContactMainContainer .ContactContainer .ContactForm #Message {
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+.ContactMainContainer .ContactContainer .ContactForm a {
+  background-color: none;
+  color: #f44336;
+  text-decoration: none;
+  border: 1px solid #f44336;
+  padding: 12px 34px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.ContactMainContainer .ContactContainer .ContactForm a:hover {
+  border: 2px solid #f44336;
+  background-color: #f44336;
+  color: white;
+  transition: 1s;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+header .Navbar {
+  width: 83%;
+  height: 60px;
+  margin: auto;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .Navbar .Logo {
+  width: 13%;
+  height: 60px;
+}
+header .Navbar .Logo img {
+  width: 10rem;
+  padding-top: 0.5rem;
+}
+header .Navbar .NavMenu {
+  width: 28%;
+  height: 60px;
+}
+header .Navbar .NavMenu ul {
+  display: flex;
+}
+header .Navbar .NavMenu ul li {
+  list-style: none;
+}
+header .Navbar .NavMenu ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+}
+header .Navbar .NavMenu ul li :hover {
+  border-bottom: 2px solid #f44336;
+}
+header .BiggestUniversity {
+  width: 46%;
+  margin: auto;
+  margin-top: 12rem;
+  text-align: center;
+}
+header .BiggestUniversity h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: sans-serif;
+}
+header .BiggestUniversity p {
+  color: white;
+  margin-bottom: 4rem;
+}
+header .BiggestUniversity a {
+  background-color: none;
+  color: #f44336;
+  text-decoration: none;
+  border: 1px solid #f44336;
+  padding: 12px 34px;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .BiggestUniversity a:hover {
+  border: 2px solid #f44336;
+  background-color: #f44336;
+  color: white;
+  transition: 1s;
+}
+
+.Courses_MainContainer {
+  width: 100%;
+  height: 62vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Courses_MainContainer .Courses_Container {
+  width: 76%;
+  height: 38.5vh;
+  text-align: center;
+}
+.Courses_MainContainer .Courses_Container h1 {
+  margin-top: 0rem;
+}
+.Courses_MainContainer .Courses_Container p {
+  color: #777;
+  font-size: 0.9rem;
+}
+.Courses_MainContainer .Courses_Container .Courses_List {
+  height: 23vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Courses_MainContainer .Courses_Container .Courses_List .Courses {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #fff3f3;
+}
+.Courses_MainContainer .Courses_Container .Courses_List .Courses p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.Campuses_MainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Campuses_MainContainer .Campuses_Container {
+  width: 76%;
+  height: 80vh;
+  text-align: center;
+}
+.Campuses_MainContainer .Campuses_Container h1 {
+  margin-top: 0rem;
+}
+.Campuses_MainContainer .Campuses_Container p {
+  color: #777;
+  font-size: 0.9rem;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List {
+  height: 60vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List .Campuses {
+  width: 21%;
+  border-radius: 10px;
+  position: absolute;
+  overflow: hidden;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List .Campuses img {
+  width: 100%;
+  display: block;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List .Campuses .layer {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List .Campuses .layer h3 {
+  color: white;
+  opacity: 0;
+  font-weight: 500;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List .Campuses .layer:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List .Campuses .layer:hover h3 {
+  opacity: 1;
+  bottom: 42%;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List #London {
+  order: 1;
+  z-index: 3;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List #Newyork {
+  right: 624px;
+}
+.Campuses_MainContainer .Campuses_Container .Campuses_List #Washington {
+  right: 193px;
+}
+
+.Facilities_MainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.Facilities_MainContainer .Facilities_Container {
+  width: 76%;
+  height: 38.5vh;
+  text-align: center;
+}
+.Facilities_MainContainer .Facilities_Container h1 {
+  margin-top: 0rem;
+}
+.Facilities_MainContainer .Facilities_Container p {
+  color: #777;
+  font-size: 0.9rem;
+}
+.Facilities_MainContainer .Facilities_Container .Facilities_List {
+  height: 41vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Facilities_MainContainer .Facilities_Container .Facilities_List .Facilities {
+  width: 30%;
+  border-radius: 4px;
+  text-align: left;
+}
+.Facilities_MainContainer .Facilities_Container .Facilities_List .Facilities img {
+  width: 23.4rem;
+  border-radius: 10px;
+}
+
+.Enroll_Container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+.Enroll_Container .Enroll {
+  width: 76%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("eduford_img/banner2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.Enroll_Container .Enroll .EnrollText {
+  width: 60%;
+  height: 26vh;
+  color: white;
+  text-align: center;
+}
+.Enroll_Container .Enroll .EnrollText h1 {
+  padding-bottom: 1rem;
+}
+.Enroll_Container .Enroll .EnrollText a {
+  background-color: none;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 12px 34px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.Enroll_Container .Enroll .EnrollText a:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: #f44336;
+  transition: 1s;
+}
+
+footer {
+  height: 6rem;
+  background-color: #f44336;
+}
+@media (max-width: 1340px) {
+  footer {
+    width: 102.7%;
+  }
+}
+@media (max-width: 1024px) {
+  footer {
+    width: 100%;
+  }
+}
+footer .Footer_Container {
+  width: 74%;
+  padding-top: 2.5rem;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1660px) and (min-width: 1367px) {
+  footer .Footer_Container {
+    width: 86%;
+  }
+}
+@media (max-width: 1369px) and (min-width: 1367px) {
+  footer .Footer_Container {
+    width: 91%;
+  }
+}
+@media (max-width: 1169px) {
+  footer .Footer_Container {
+    width: 77%;
+  }
+}
+@media (max-width: 1090px) {
+  footer .Footer_Container {
+    width: 83%;
+  }
+}
+footer .Footer_Container .Footer_text {
+  color: white;
+  font-family: "open sans";
+  font-size: 1rem;
+}
+@media (max-width: 1920px) and (max-height: 1080px) and (min-width: 1367px) {
+  footer .Footer_Container .Footer_text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  footer .Footer_Container .Footer_text {
+    font-size: 1.8rem;
+    width: 48.4rem;
+    margin-left: 4.6rem;
+  }
+}
+@media (max-width: 677px) {
+  footer .Footer_Container .Footer_text {
+    width: 49.4rem;
+  }
+}
+@media (max-width: 543px) {
+  footer .Footer_Container .Footer_text {
+    width: 31rem;
+    text-align: center;
+  }
+}
+footer .Footer_Container .Footer_Icon {
+  margin-top: -1.5rem;
+}
+footer .Footer_Container .Footer_Icon i {
+  color: white;
+}
+@media (max-width: 768px) {
+  footer .Footer_Container .Footer_Icon {
+    margin-top: -0.5rem;
+    margin-left: 21rem;
+  }
+}
+@media (max-width: 677px) {
+  footer .Footer_Container .Footer_Icon {
+    padding-left: 19rem;
+  }
+}
+@media (max-width: 543px) {
+  footer .Footer_Container .Footer_Icon {
+    margin-left: 83px;
+    margin-top: 1rem;
+    padding: 0px;
+  }
+}
+footer .Footer_Container .Footer_Icon ul li {
+  display: inline;
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=Home.css.map */

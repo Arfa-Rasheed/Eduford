@@ -1,0 +1,443 @@
+@import "_reset.scss";
+@import "_global.scss";
+@import "_variable.scss";
+@import "_mixin.scss";
+
+@import "pages/About";
+@import "pages/Course";
+@import "pages/Contact";
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    // background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    //     url('eduford_img/banner.png');
+    background-position: center;
+    background-size: cover;
+
+    .Navbar {
+        width: 83%;
+        height: 60px;
+        margin: auto;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        .Logo {
+            width: 13%;
+            height: 60px;
+
+            img {
+                width: 10rem;
+                padding-top: 0.5rem;
+            }
+        }
+
+        .NavMenu {
+            width: 28%;
+            height: 60px;
+
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        margin-left: 2rem;
+                        font-size: 0.9rem;
+
+                    }
+
+                    :hover {
+                        border-bottom: 2px solid #f44336;
+                    }
+                }
+            }
+        }
+    }
+
+    .BiggestUniversity {
+        width: 46%;
+        // height: 32vh;
+        margin: auto;
+        margin-top: 12rem;
+        text-align: center;
+
+        h1 {
+            color: white;
+
+            font-size: 3.5rem;
+            font-family: sans-serif;
+        }
+
+        p {
+            color: white;
+            margin-bottom: 4rem;
+        }
+
+        @include LinkButton(#f44336, white);
+    }
+}
+
+.Courses_MainContainer {
+    width: 100%;
+    height: 62vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Courses_Container {
+        width: 76%;
+        height: 38.5vh;
+        text-align: center;
+
+        h1 {
+            margin-top: 0rem;
+        }
+
+        p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .Courses_List {
+            height: 23vh;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+
+            .Courses {
+                width: 30%;
+                border-radius: 10px;
+                background-color: #fff3f3;
+
+                p {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.Campuses_MainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Campuses_Container {
+        width: 76%;
+        height: 80vh;
+        text-align: center;
+
+        h1 {
+            margin-top: 0rem;
+        }
+
+        p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .Campuses_List {
+            height: 60vh;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+
+            .Campuses {
+                width: 21%;
+                border-radius: 10px;
+                position: absolute;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+                .layer {
+                    background-color: transparent;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 0.5s;
+
+                    h3 {
+                        color: white;
+                        opacity: 0;
+                        font-weight: 500;
+                        font-size: 26px;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                        position: absolute;
+                    }
+                }
+
+                .layer:hover {
+                    background-color: rgba(266, 0, 0, 0.5);
+                }
+
+                .layer:hover h3 {
+                    opacity: 1;
+                    bottom: 42%;
+                }
+            }
+
+            #London {
+                order: 1;
+                z-index: 3;
+            }
+
+            #Newyork {
+                right: 624px;
+            }
+
+            #Washington {
+                right: 193px;
+            }
+        }
+    }
+}
+
+.Facilities_MainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .Facilities_Container {
+        width: 76%;
+        height: 38.5vh;
+        text-align: center;
+
+        h1 {
+            margin-top: 0rem;
+        }
+
+        p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .Facilities_List {
+            height: 41vh;
+            // border: 2px solid BLUE;           
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+
+            .Facilities {
+                width: 30%;
+                border-radius: 4px;
+                text-align: left;
+
+                img {
+                    width: 23.4rem;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+    }
+}
+
+.Enroll_Container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+
+    .Enroll {
+        width: 76%;
+        height: 40vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('eduford_img/banner2.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+        .EnrollText {
+            width: 60%;
+            height: 26vh;
+            color: white;
+            text-align: center;
+
+            h1 {
+                padding-bottom: 1rem;
+            }
+
+            @include LinkButton(white, #f44336);
+        }
+    }
+}
+
+// footer{
+//     width:100%;
+//     height:32vh;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     .FooterText{
+//         width:54%;
+//         p{
+
+//             color: #777;
+//         }
+//         .Icon_Container{
+//             width:15%;
+//             height:10%;
+//             margin-top: 2rem;
+//             margin-left: 22.5rem;
+//             .IconList{
+//               display: flex;
+//               justify-content: space-between;
+//             }
+//         }
+//     }
+// }
+footer {
+    height: 6rem;
+    background-color: #f44336;
+
+    @media(max-width:1340px) {
+        width: 102.7%;
+    }
+
+    @media(max-width:1024px) {
+        width: 100%;
+    }
+
+    .Footer_Container {
+        width: 74%;
+        padding-top: 2.5rem;
+        margin: auto auto;
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width:1660px) and (min-width:1367px) {
+            width: 86%;
+        }
+
+        @media(max-width:1369px) and (min-width:1367px) {
+            width: 91%;
+
+        }
+
+        @media (max-width: 1169px) {
+            width: 77%;
+        }
+
+        @media (max-width: 1090px) {
+            width: 83%;
+        }
+
+        // @media(max-width:998px)
+        // {
+        // width:93%;
+        // }
+        // @media(max-width:768px)
+        // {
+        // margin-left:-10px;
+        // }
+        // @media(max-width:543px)
+        // {
+        // display:block;
+        // width:50%;
+        // height: auto;
+        // margin: auto;
+        // padding-top: 1.7rem;
+        // }
+
+
+        .Footer_text {
+            color: white;
+            font-family: 'open sans';
+            font-size: 1rem;
+
+            @media (max-width:1920px) and (max-height:1080px) and (min-width:1367px) {
+                font-size: 2rem;
+            }
+
+            //  @media(max-width:998px)
+            //  {
+            //   font-size:1.8rem;
+            //   width:48.4rem;
+            //   margin-left: 0.6rem;
+            //  }
+            @media(max-width:768px) {
+                font-size: 1.8rem;
+                width: 48.4rem;
+                margin-left: 4.6rem;
+            }
+
+            @media(max-width:677px) {
+                width: 49.4rem;
+            }
+
+            @media(max-width:543px) {
+                width: 31rem;
+                text-align: center;
+
+            }
+
+        }
+
+        .Footer_Icon {
+            margin-top: -1.5rem;
+
+            // .Icon_button {
+            //     background-color: white;
+            //     height: 3rem;
+            //     width: 3rem;
+            //     // color: $pink;
+            //     border-radius: 2rem;
+            //     border: none;
+            // }
+
+            i{
+                color: white;
+            }
+
+            // @media(max-width:998px)
+            // {
+
+
+            // }
+            @media(max-width:768px) {
+                margin-top: -0.5rem;
+                margin-left: 21rem;
+
+            }
+
+            @media(max-width:677px) {
+                padding-left: 19rem;
+            }
+
+            @media(max-width:543px) {
+                margin-left: 83px;
+                margin-top: 1rem;
+                padding: 0px;
+            }
+
+            ul {
+                li {
+                    display: inline;
+                    margin-left: 0.5rem;
+
+                }
+            }
+
+        }
+    }
+}
